@@ -1,0 +1,3 @@
+minetest.override_item(":",{
+			  range=10,
+})

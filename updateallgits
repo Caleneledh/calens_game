@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+for FILE in *; do
+    if [ -d "$FILE" ]; then
+	if [ -d "$FILE/.git" ]; then
+	    cd $FILE
+	    git fetch origin
+	    git merge origin/master
+	    cd ..
+	fi    
+   fi
+done
+
+       
+      
